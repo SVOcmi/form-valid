@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Valid</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>  
+</head>
+<body>
+    <div class="container">
+
+        <div class="popup-success hidden" >
+            <h2>Данные отправлены</h2>
+            <img src="./img/success.png">
+        </div>
+
+        <form id="form" class="form">
+            <h2>Форма регистрации</h2>
+            <div class="form-control">
+                <lable for="username">Имя</lable>
+                <input type="text" name="username" id="username" placeholder="Имя" autocomplete="off" />
+                <small></small>
+            </div>
+            <div class="form-control">
+                <lable for="email">Почта</lable>
+                <input type="mail" name="email" id="email" placeholder="Почта" autocomplete="off" />
+                <small></small>
+            </div>
+            <div class="form-control">
+                <lable for="password">Пароль</lable>
+                <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="off"/>
+                <small>Ошибка</small>
+            </div>
+            <div class="form-control">
+                <lable for="confirm_password">Подтвердите пароль</lable>
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Подтвердите пароль" autocomplete="off"/>
+                <small>Ошибка</small>
+            </div>
+            <div class="form-control">
+                <lable for="phone">Телефон</lable>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="off"/>
+                <small>Ошибка</small>
+            </div>
+            <div class="button-conteiner">
+                <button id="enter">Применить</button>
+                <button id="reset">Сбросить</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
